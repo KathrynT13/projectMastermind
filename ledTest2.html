@@ -1,0 +1,19 @@
+<!--A neater and more readable version of the led test-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	
+	<body>
+		<form action="https://api.particle.io/v1/devices/e00fce68821377268633456f/setLED?access_token=b931540712b146533cdf56b59ec833f57508cee9" method="POST" onsubmit="setTimeout(function(){window.location.reload();},10);">
+			<input type="radio" id="ledOn" name="led" value="on">
+			<label for="ledOn">On</label>
+			<input type="radio" id="ledOff" name="led" value="off">
+			<label for="ledOff">Off</label>
+			<br><br>
+			<input type="submit" value="submit">
+		</form>
+	</body>
+	
+</html>
