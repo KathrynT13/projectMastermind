@@ -1,0 +1,14 @@
+RNG function:
+	Generate random number
+	Send random number to website via MQTT
+
+Retrieve guess from website
+If guess is correct:
+	Flash green LED
+
+If guess is incorrect:
+	Flash red LED
+	send completion message
+	If numbers are in right place:
+		generate unfinished number
+		sebd unfinished number to website
