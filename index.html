@@ -5,18 +5,20 @@
 	</head>
 
 	<body>
-		<!-- <form align="center">
-			<input type=text id="number" value="{NUMBER WILL GO HERE}" style="text-align: center; font-size: 25px;"><br><br>
-			<input type=text id="guess" placeholder="Guess a number!" maxlength="1" style="text-align: center; font-size: 20px"><br><br>
-			<input type=submit>
-		</form> -->
+		<table align="center" id="pattern">
+			<tr>
+				<td id="firstPT">red</td>
+				<td id="secondPT">yellow</td>
+				<td id="thirdPT">green</td>
+			</tr>
+		</table>
 		
-		<form align="center" action="https://api.particle.io/v1/devices/e00fce68821377268633456f/sendNum?access_token=b931540712b146533cdf56b59ec833f57508cee9" method="GET" onsubmit="setTimeout(function(){window.location.reload();},10);">
-			<input type=text id="numberDisplay" value=randNum style="text-align: center; font-size: 25px;">
-		</form>
-		<br><br>
-		<form align="center" action="https://api.particle.io/v1/devices/e00fce68821377268633456f/getGuess?access_token=b931540712b146533cdf56b59ec833f57508cee9" method="POST" onsubmit="setTimeout(function(){window.location.reload();},10);">
-			<input type="text" id="guess" placeholder="Guess the number!" maxlength="4" style="text-align: center; font-size:20px">
-		</form>
+		<table align="center" id="userIn">
+			<tr>
+				<td id="firstG"></td>
+				<td id="secondG"></td>
+				<td id="thirdG"></td>
+			</tr>
+		</table>
 	</body>
 </html>
