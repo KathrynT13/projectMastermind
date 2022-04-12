@@ -1,8 +1,13 @@
-const red = document.getElementById('.panelR');
-const yellow = document.getElementById('.panelY');
-const green = document.getElementById('.panelG');
+const red = document.querySelector('.pRed');
+const yellow = document.querySelector('.pYellow');
+const green = document.querySelector('.pGreen');
 
-const sequence = [red, yellow, green];
+const getRandomPanel = () => {
+	const panels = [red, yellow, green];
+	return panels[parseInt(Math.random() * panels.length)]
+}
+
+const sequence = [getRandomPanel(),getRandomPanel(),getRandomPanel(),getRandomPanel(),];
 
 const flash = panel => {
 	return new Promise((resolve, reject) => {
@@ -11,8 +16,10 @@ const flash = panel => {
 			panel.className = panel.className.replace(
 			' active', 
 			'');
-			resolve();
-		}, 1000);
+			setTimeout(() => {
+				resolve();
+			}, 250);
+		}, 750);
 	});
 };
 
