@@ -11,6 +11,7 @@ body{
 
 #bodyContainer{
 	border: 2px dashed black;
+	border-radius: 20%;
 	background-color: white;
 	width: 75%;
 	height: 50%;
