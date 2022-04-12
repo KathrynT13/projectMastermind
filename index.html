@@ -1,23 +1,19 @@
 <DOCTYPE! html>
+<html>
 	<head>
 		<title>Project Mastermind</title>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="style.css">
 	</head>
 
 	<body>
-		<table align="center" id="pattern">
+		<table id="panelContainer">
 			<tr>
-				<td id="firstPT">red</td>
-				<td id="secondPT">yellow</td>
-				<td id="thirdPT">green</td>
-			</tr>
-		</table>
-		
-		<table align="center" id="userIn">
-			<tr>
-				<td id="firstG"></td>
-				<td id="secondG"></td>
-				<td id="thirdG"></td>
+				<td><div class="panel" id="panelR"></div></td>
+				<td></td>
+				<td><div class="panel" id="panelY"></div></td>
+				<td></td>
+				<td><div class="panel" id="panelG"></div></td>
 			</tr>
 		</table>
 	</body>
