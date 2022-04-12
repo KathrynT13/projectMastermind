@@ -1,0 +1,23 @@
+.panel {
+	border: 2px solid black;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+
+#panelContainer{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#panelR{
+	background-color: red;
+}
+
+#panelY{
+	background-color: yellow;
+}
+
+#panelG{
+	background-color: green;
+}
