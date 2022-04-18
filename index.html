@@ -13,13 +13,15 @@
 			<!--The display panels-->
 			<table id="panelContainer">
 				<tr>
-					<td><div class="panel pRed"></div></td>
+					<td><div onclick = "panelClicked(event.currentTarget)"  class="panel pRed"></div></td>
 					<td></td><td></td><td></td><td></td>
-					<td><div class="panel pYellow"></div></td>
+					<td><div onclick = "panelClicked(event.currentTarget)" class="panel pYellow"></div></td>
 					<td></td><td></td><td></td><td></td>
-					<td><div class="panel pGreen"></div></td>
+					<td><div onclick = "panelClicked(event.currentTarget)"  class="panel pGreen"></div></td>
 				</tr>
 			</table>
+			<br><br>
+			<button onClick="window.location.reload();" id="resetButton">Reset</button>
 		</div>
 		<script src="index.js"></script>
 	</body>
